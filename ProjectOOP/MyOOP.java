@@ -1,7 +1,7 @@
 
 public class MyOOP {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {	// Java는 java 파일명과 똑같은 클래스의 main 메소드를 실행시키기로 약속이 되어있고, main 메소드를 가지는 클래스에만 앞에 public을 붙여줘야 한다.
 		Print.delimiter = "----";	// Print 클래스 delimiter 변수에 구분 문구 할당
 		Print.A();	// Print 클래스의 A 메소드 호출
 		Print.A();
@@ -16,20 +16,4 @@ public class MyOOP {
 	}
 }
 
-class Print {	// Print 클래스 선언
-	public static String delimiter;	// 클래스 변수 선언
-	
-	public static void A() {	// 반복적으로 사용되는 코드를 메소드로 그룹핑
-		//.. 일억줄의 코드
-		System.out.println(delimiter);	// 클래스 변수 출력
-		System.out.println("A");
-		System.out.println("A");
-	}
-	
-	public static void B() {	// 매개 변수로 구분 문구를 받음
-		//.. 일억줄의 코드
-		System.out.println(delimiter);	// 클래스 변수 출력
-		System.out.println("B");
-		System.out.println("B");
-	}
-}
+// java 파일을 컴파일하면 각각의 클래스가 파일 형태로 만들어진다.
